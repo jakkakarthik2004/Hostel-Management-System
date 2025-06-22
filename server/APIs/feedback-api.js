@@ -2,6 +2,7 @@ const express = require("express")
 const feedbackApp = express.Router()
 
 let feedbackCollection;
+
 feedbackApp.use((req, res, next) => {
     feedbackCollection = req.app.get("feedbackCollection");
     next();
