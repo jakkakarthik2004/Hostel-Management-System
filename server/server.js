@@ -6,6 +6,7 @@ const cors = require("cors");
 require("dotenv").config();
 const WebSocket = require("ws");
 const http = require("http");
+
 app.use(cors());
 app.use(exp.json()); // Ensure JSON middleware is used
 const server = http.createServer(app); // use HTTP server
