@@ -21,7 +21,6 @@ menuApp.get("/", async (req, res) => {
   }
 });
 
-// PUT update a day's menu
 menuApp.put("/:day", async (req, res) => {
     try {
       const { day } = req.params;
@@ -38,7 +37,7 @@ menuApp.put("/:day", async (req, res) => {
         .findOneAndUpdate(
           { day: day },
           { $set: { breakfast, lunch, snacks, dinner } },
-          { returnDocument: 'after' } // Using 'after' instead of 'false'
+          { returnDocument: 'after' }
         );
   
       if (!result.value) {
@@ -50,7 +49,7 @@ menuApp.put("/:day", async (req, res) => {
   
       res.status(200).json({
         success: true,
-        data: result.value, // This will now return the updated menu
+        data: result.value,
       });
     } catch (err) {
       console.error("Error updating menu:", err);
