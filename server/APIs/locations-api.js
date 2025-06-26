@@ -111,8 +111,8 @@
 
         res.status(200).json({
         username: userLocation.username,
-        latitude: coordinates.coordinates[1], // latitude is the second element
-        longitude: coordinates.coordinates[0], // longitude is the first element
+        latitude: coordinates.coordinates[1],
+        longitude: coordinates.coordinates[0],
         timestamp: userLocation.timestamp,
         });
     } catch (err) {
