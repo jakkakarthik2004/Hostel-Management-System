@@ -17,7 +17,6 @@ userApp.use((req, res, next) => {
 userApp.post("/register",
   expressAsyncHandler(async (req, res) => {
     const data = req.body.data;
-    // console.log(data)
     const result = await usersCollection.insertMany(data);
     res.send({
       success: true,
@@ -56,8 +55,6 @@ userApp.post("/login",
         father_mobile: user.father_mobile,
         room_no: user.room_no,
         branch: user.branch,
-        // role: user.role,
-        // id: user._id.toString(),
       },
     });
   }))
