@@ -23,7 +23,7 @@
         timestamp: new Date(),
         coordinates: {
             type: "Point",
-            coordinates: [longitude, latitude], // IMPORTANT: [lng, lat]
+            coordinates: [longitude, latitude],
         }
         };
 
