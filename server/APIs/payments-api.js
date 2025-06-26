@@ -53,10 +53,5 @@ paymentsApp.post("/get-payments",expressAsyncHandler(async (req, res) => {
       }})
 }))
 
-// sending emails for the due people
-// paymentsApp.get("/send-emails",expressAsyncHandler(async (req, res) => {
-//     const users = await usersCollection.find().toArray();
-//     const payments = await paymentsCollection.find().toArray();
-// }))
 
 module.exports = paymentsApp;
