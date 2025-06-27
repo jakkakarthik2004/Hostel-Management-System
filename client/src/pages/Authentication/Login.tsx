@@ -22,7 +22,6 @@ export default function LoginForm({
     formState: { errors },
   } = useForm<FormData>();
   
-  // const history = useHistory();
   const navigate = useNavigate();
 
   const onSubmit = async (data: FormData) => {
