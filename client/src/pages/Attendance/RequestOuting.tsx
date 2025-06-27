@@ -66,7 +66,6 @@ export default function RequestOuting() {
     },
   })
 
-  // Fetch outings data
   const fetchOutings = async () => {
     setIsLoading(true)
     try {
