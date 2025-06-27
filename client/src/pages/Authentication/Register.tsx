@@ -60,11 +60,9 @@ const Register: React.FC = () => {
       try {
         const workbook = XLSX.read(e.target.result, { type: "binary" });
 
-        // Read first sheet
         const sheetName = workbook.SheetNames[0];
         const sheet = workbook.Sheets[sheetName];
 
-        // Convert to JSON
         const data: object[] = XLSX.utils.sheet_to_json(sheet);
         setJsonData(data);
         console.log("Converted JSON:", data);
