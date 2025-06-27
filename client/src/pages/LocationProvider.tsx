@@ -78,20 +78,18 @@ export const LocationProvider: React.FC<LocationProviderProps> = ({ children, go
     }
   };
 
-  // Request permission on mount
   useEffect(() => {
     if (!permissionGranted) {
       requestLocationPermission();
     }
   }, [permissionGranted]);
 
-  // Send updated location every 10 minutes
   useEffect(() => {
     const interval = setInterval(() => {
       if (location) {
         sendLocationToBackend(location.latitude, location.longitude);
       }
-    }, 10 * 60 * 1000); // 10 minutes
+    }, 10 * 60 * 1000);
 
     return () => clearInterval(interval);
   }, [location]);
