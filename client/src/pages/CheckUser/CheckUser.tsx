@@ -14,7 +14,6 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { toast } from "sonner"
 import { Camera, CheckCircle, Loader2, Search, User, UserCheck, UserX } from "lucide-react"
 
-// Sample student data - replace with your actual data source
 const sampleStudents: Student[] = [
   {
     id: "1",
