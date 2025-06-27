@@ -17,9 +17,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { format } from "date-fns"
 import { CheckCircle, Clock, Eye, Filter } from "lucide-react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { toast } from "sonner" // Changed from @/components/ui/use-toast to sonner
+import { toast } from "sonner"
 
-// Define the outing type
 interface Outing {
   _id: string
   purpose: string
