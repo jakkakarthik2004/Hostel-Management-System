@@ -132,12 +132,10 @@ export default function AttendanceSystem() {
   // Helper function to detect face and get descriptor
   const detectFace = async (imgElement: HTMLImageElement) => {
     try {
-      // Detect all faces and compute descriptors
       const detections = await faceapi.detectAllFaces(imgElement).withFaceLandmarks().withFaceDescriptors()
 
       if (detections.length === 0) return null
 
-      // Return descriptor of the first face
       return detections[0].descriptor
     } catch (error) {
       console.error("Error detecting face:", error)
