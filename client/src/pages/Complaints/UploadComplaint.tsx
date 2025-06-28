@@ -75,7 +75,6 @@ function UploadComplaint() {
     }
   }
 
-  // Submit complaint
   async function handleUpload() {
     if (!file) {
       toast.error("Please select an image for your complaint")
