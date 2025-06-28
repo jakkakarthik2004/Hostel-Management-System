@@ -56,7 +56,6 @@ function AdminComplaints() {
         throw new Error(result.data.message)
       }
 
-      // Update local state to reflect the change
       setComplaints(
         complaints.map((complaint) => (complaint._id === id ? { ...complaint, status: "approved" } : complaint)),
       )
