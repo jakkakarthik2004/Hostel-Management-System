@@ -257,7 +257,6 @@ export default function AdminFeedbackList() {
           </Card>
         </div>
 
-        {/* Filters */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div className="flex items-center gap-2">
             <FiFilter className="text-muted-foreground" />
