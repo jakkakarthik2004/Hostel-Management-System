@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 
-// Load the Google Maps script dynamically
 const loadGoogleMapsScript = (callback: () => void) => {
   const existingScript = document.getElementById("googleMapsScript");
   if (!existingScript) {
@@ -61,7 +60,6 @@ const HostelLocationCheck: React.FC = () => {
       title: "You are here",
     });
 
-    // Circle around hostel
     new google.maps.Circle({
       strokeColor: "#ff0000",
       strokeOpacity: 0.6,
