@@ -139,7 +139,6 @@ function UploadComplaint() {
 
   return (
     <div className="container mx-auto py-8 max-w-4xl">
-      {/* Add Sonner Toaster component */}
       <Toaster position="top-right" richColors />
 
       <div className="mb-8 space-y-6">
@@ -162,7 +161,6 @@ function UploadComplaint() {
               </CardHeader>
 
               <CardContent className="space-y-6">
-                {/* Image Upload Section with preview */}
                 <div className="space-y-2">
                   <Label htmlFor="image" className="text-base font-medium">
                     Upload Evidence
