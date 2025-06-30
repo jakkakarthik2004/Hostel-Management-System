@@ -225,7 +225,6 @@ export default function AdminFeedbackList() {
             </CardContent>
           </Card>
 
-          {/* Pie Chart - Rating Distribution */}
           <Card>
             <CardHeader>
               <CardTitle>Meal Rating Distribution</CardTitle>
